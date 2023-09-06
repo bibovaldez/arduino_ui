@@ -1,0 +1,163 @@
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+/* main screen */
+.monitor_data {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+}
+/* contain temp and button and time */
+.monitor_data__Upper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background: #161e29;
+  border-radius: 5px 5px 0 0;
+}
+/* contain time date*/
+.monitor_data__Upper__DATEandTIME {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 35%;
+  letter-spacing: 3px;
+  font-size: medium;
+  font-weight: 300;
+}
+.monitor_data__Upper__DATEandTIME__WEEKday_MONTH_MDAY {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.Time {
+  font-weight: 700;
+  font-size: 500%;
+  padding: 0px;
+  margin: 0px;
+}
+
+/* two chil upper and lower */
+.monitor_data__Upper__TEMPandHUM {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 65%;
+}
+.monitor_data__Upper__TEMPandHUM__Upper {
+  display: flex;
+  width: 100%;
+  height: auto;
+  justify-content: center;
+  align-items: center;
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  border-bottom: 3px solid #223957;
+}
+.monitor_data__Upper__TEMPandHUM__Upper__TEMPHUM {
+  display: flex;
+  flex-direction: row;
+  width: 75%;
+}
+.monitor_data__Upper__TEMPandHUM__Upper__TEMPHUM__TEMP__data,
+.monitor_data__Upper__TEMPandHUM__Upper__TEMPHUM__HUM__data {
+  font-size: 800%;
+  font-weight: 600;
+  margin: 0%;
+  padding: 0%;
+  margin-right: 8px;
+  margin-left: 0px;
+  margin-top: 0%;
+}
+.monitor_data__Upper__TEMPandHUM__Upper__TEMPHUM__TEMP__symbol,
+.monitor_data__Upper__TEMPandHUM__Upper__TEMPHUM__HUM__symbol {
+  display: flex;
+  width: 50%;
+  height: 50%;
+  font-size: xx-large;
+  cursor: pointer;
+}
+/* hum and temp */
+.monitor_data__Upper__TEMPandHUM__Lower {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  border-radius: 0 0 5px 5px;
+}
+.monitor_data__Upper__TEMPandHUM__Lower__TEMP__button,
+.monitor_data__Upper__TEMPandHUM__Lower__HUM__button {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  margin: 0%;
+  padding: 5px 0px 0px 0px;
+}
+/* lowerr control */
+.monitor_data__Lower {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 10px;
+  background: #172437;
+  border-radius: 0 0 5px 5px;
+  height: 50%;
+}
+.lowerbut {
+  margin: 4px;
+  padding: auto;
+  display: flex;
+  flex-direction: row;
+}
+/* loading animation */
+.loader {
+  border: 4px solid rgba(255, 255, 255, 0.6);
+  border-left-color: transparent;
+  border-radius: 50%;
+  margin: 20px;
+}
+.loader {
+  border: 4px solid rgba(253, 253, 253, 0.6);
+  border-left-color: transparent;
+  width: 80px;
+  height: 80px;
+}
+.loader {
+  border: 4px solid rgba(248, 246, 246, 0.6);
+  border-left-color: transparent;
+  width: 80px;
+  height: 80px;
+  animation: spin89345 1s linear infinite;
+}
+@keyframes spin89345 {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.switch {
+  width: auto;
+  height: 34px;
+  margin: 5px;
+  border-radius: 5px;
+  background: #172437;
+  padding: 4px;
+}
+.chart{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
